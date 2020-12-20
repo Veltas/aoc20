@@ -44,9 +44,6 @@ paths path len: #paths
 
 : count-all ( -- )  0 begin line>pad #pad while dup count-paths 1+ repeat drop ;
 
-: counts. ( -- )
-	1 paths #paths path arr-bound do i ? path +loop ;
-
 : count-product ( -- n )
 	1 paths #paths path arr-bound do i @ * path +loop ;
 
